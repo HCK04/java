@@ -11,7 +11,7 @@ a = 5;
 b = a;
 b = 6;
 
-console.log(a)
+console.log(a)	
 console.log(b)
 
 
