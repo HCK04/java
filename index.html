@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produits formulaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="outside_container_all">
+
+        <div class="commander">
+            <h1 class="h1_clt">Commander Les TVs</h1>
+            <h3>TVs</h3>
+            <select class="select_menu">
+                <option>TV OLED</option>
+                <option>TV LCD</option>
+                <option>TV SAMSUNG</option>
+                <option>TV ITEL</option>
+                <option>TV APPLE</option>
+                <option>TV 8K</option>
+            </select>
+            <h3>Quantite</h3>
+            <input type="number" min="1">
+            <button class="conf_btn">Ajouter au panier</button>
+        </div>
+        <div id="panier">
+
+        </div>
+        <div class="prix-container">
+            <div class="prix-label">Prix HT:</div>
+            <div id="prix-ht" class="prix-value">0</div>
+            <div class="prix-label">Prix TTC:</div>
+            <div id="prix-ttc" class="prix-value">0</div>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

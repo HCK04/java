@@ -1,0 +1,110 @@
+body{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+/* Existing CSS */
+.outside_container_all {
+    border: solid 3px;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.h1_clt {
+    color: blue;
+    text-align: center; /* Center align the heading */
+}
+
+h3 {
+    color: green;
+}
+
+.commander {
+    margin-bottom: 20px; /* Add some space below the commander section */
+}
+
+.select_menu {
+    width: calc(100% - 22px); /* Adjusted width to align with the button */
+    max-width: 400px;
+    font-size: 1.15rem;
+    color: blueviolet;
+    margin-bottom: 10px; /* Add some space below the select menu */
+}
+
+input[type="number"] {
+    width: calc(100% - 22px); /* Adjusted width to align with the button */
+    padding: 8px;
+    margin-bottom: 10px; /* Add some space below the input field */
+}
+
+.conf_btn {
+    display: block;
+    width: 800px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#panier {
+    margin-top: 20px; /* Add some space above the cart */
+    width: 100%;
+}
+
+table {
+    width: 800px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+img {
+    max-width: 100px; /* Adjust the image size */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.prix-container {
+    margin-top: 20px;
+}
+
+.prix-label {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #333;
+}
+
+.prix-value {
+    display: inline-block;
+    margin-right: 20px;
+    color: #4CAF50;
+}

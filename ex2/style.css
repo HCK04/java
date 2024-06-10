@@ -1,0 +1,95 @@
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,96,0.8596230728619573) 45%, rgba(0,212,255,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont{
+    padding: 30px;
+    width: 600px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    line-height: 30px;
+
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+button{
+    background-color: aqua;
+}
+
+table,th{
+    border: solid;
+}
+.border{
+    border: 1px solid red;
+}
+#ERRid, #ERRfn, #ERRln{
+    color: red;
+}
+input{
+    border-radius: 10px;
+    border-color: floralwhite;
+    height: 20px;
+
+}
+.label{
+    font-size: 20px;
+    color: rgba(26, 255, 0, 0.527);
+
+}
+
+.button-1 {
+
+  background-color: #7771d6;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 20px;
+  outline: none;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  user-select: none;
+  -webkit-user-select: none;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 0px;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #ba79f3;
+}
+.div_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

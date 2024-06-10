@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            border: solid;
+            padding: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: solid;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="">
+        <input type="text" name="" id="" placeholder="Search">
+        <h1>Commander les TVs</h1>
+        TVs
+                <select name="" class="tv">
+                    <option value=""></option>
+                    <option value="">SAMSUNG</option>
+                    <option value="">LG</option>
+                    <option value="">APPLE</option>
+                </select>
+        Quantité: <input type="text" name="" id="qt">
+        <div>
+            <button onclick="add()" type="button">ajouter au panier</button>
+        </div>
+        <h1>Panier des commandes</h1>
+    </form>
+    <table id="tab">
+        <tr>
+            <th>Reference</th>
+            <th>Quantité</th>
+            <th>image</th>
+            <th>action</th>
+        </tr>
+
+
+
+    </table>
+    <button> Commander</button>
+    <script>
+        function add() {
+            let table = document.getElementById("tab")
+            let TVs = document.querySelector(".tv").value
+            let QT = document.getElementById("qt").value
+            let template =
+            
+            <tr>
+            <td>${TVs}</td>
+            <td>${QT}</td>
+          
+            <button type="button">supprimer</button>
+        </tr>
+            table.innerHTML += template
+        }
+    </script>
+</body>
+
+</html>

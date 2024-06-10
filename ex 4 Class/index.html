@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex Class 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <form action="#">
+            <label id="code">Code :</label></br>
+            <input id="codeI" name="code" placeholder="Entrer Votre Code"></input></br>
+
+            <label id="nom">Nom :</label></br>
+            <input id="nomI" name="nom" placeholder="Entrer Votre Node"></input></br>
+
+            <label id="pnom">Prenom :</label></br> 
+            <input id="pnomI" name="pnom" placeholder="Entrer Votre Prenom"></input></br>
+        
+            <label id="grp">Groupe :</label></br> 
+            <input id="grpI" name="grp" placeholder="Entrer Votre Groupe"></input></br>
+
+            <label id="note">Note :</label></br> 
+            <input id="noteI" name="note" placeholder="Entrer Votre Note" type="number"></input></br>
+            
+            <select>
+                <option></option>
+            </select>
+
+            <button id="add" onclick="addObj()" type="button">Ajouter</button>
+            <button id="tab" onclick="afficher()" type="button">afficher</button>
+            <button id="tab" onclick="max()" type="button">Max</button>
+            <button id="ajax" type="button">Ajax</button>
+        </form>
+    </div>
+    <table border="1" id="tab1">
+        <thead>
+            <tr>
+                <th>Code</th>
+                <th>Nom</th>
+                <th>Prenom</th>
+                <th>Group</th>
+                <th>Note</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+        <div id="div"></div>
+    </table>
+<script src="java.js"></script>
+</body>
+</html>

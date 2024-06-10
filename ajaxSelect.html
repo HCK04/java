@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Load JSON into Select</title>
+</head>
+<body>
+  <button id="btn-load-json">Load Stagiaires</button>
+  <select id="stagiaire-select">
+    <option value="">-- Select a Stagiaire --</option>
+  </select>
+
+  <script>
+    document.getElementById("btn-load-json").addEventListener("click", function() {
+      let request = new XMLHttpRequest();
+      request.open("GET", "stagiaires.json", true);
+
+      request.onreadystatechange = function() {
+        if (request.readyState === 4 && request.status === 200) {
+          let stagiaires = JSON.parse(request.responseText);
+
+          let select = document.getElementById("stagiaire-select");
+
+          // Clear existing options, keeping the default one
+          select.innerHTML = "<option value=''>-- Select a Stagiaire --</option>";
+
+          // Add new options to the select
+          stagiaires.forEach(function(stagiaire) {
+            let option = document.createElement("option");
+            option.value = stagiaire.id;
+            option.textContent = stagiaire.name;
+            select.appendChild(option);
+          });
+        }
+      };
+
+      request.send(); // Send the request to fetch JSON data
+    });
+  </script>
+</body>
+</html>
